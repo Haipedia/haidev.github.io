@@ -82,3 +82,7 @@
     border-top: 1px solid rgba(255,255,255,0.05);
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+/* Prevent FOUC (Flash of Unstyled Content) for the mobile menu */
+#mobile-menu.hidden {
+    display: none !important;
+}
