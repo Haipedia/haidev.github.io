@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "CryptoPulse Dashboard",
+        "category": "Front-End",
+        "tech": "React • Tailwind • REST API",
+        "description": "A lightning-fast tracking dashboard with real-time API integration. Built to be ultra-responsive and lightweight.",
+        "image": "crypto-mockup.jpg",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "title": "Elevate Retail",
+        "category": "WordPress",
+        "tech": "WooCommerce • Custom PHP",
+        "description": "A high-converting, fully customized e-commerce platform built for a local retail brand to scale their online sales.",
+        "image": "elevate-mockup.jpg",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "title": "TaskFlow Mobile",
+        "category": "Mobile App",
+        "tech": "Java • Android SDK • SQLite",
+        "description": "A fluid productivity app optimized for seamless one-handed use across all Android devices, from standard smartphones to the latest foldables.",
+        "image": "taskflow-mockup.jpg",
+        "link": "#"
+    }
+]

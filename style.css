@@ -1,0 +1,84 @@
+/* Base Font */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Dark Mode Glassmorphism */
+.dark .glass-nav {
+    background: rgba(17, 24, 39, 0.8); /* Dark gray transparent */
+}
+
+/* Marquee Animation Engine */
+.marquee-content {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Scrolls exactly half to loop seamlessly */
+}
+
+/* Hover pause for marquee */
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+/* Blob Animations for Hero Background Graphics */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+    animation: blob 7s infinite;
+}
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+/* Deep Glassmorphism Aesthetics (Light Mode Default) */
+.deep-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode Glass */
+.dark .deep-glass {
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Avatar Ring */
+.hero-avatar-ring {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.05), 0 0 40px rgba(59, 130, 246, 0.2);
+}
+.dark .hero-avatar-ring {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.05), 0 0 40px rgba(59, 130, 246, 0.2);
+}
+
+/* Updated Marquee */
+.glass-marquee-container {
+    background: linear-gradient(90deg, rgba(243,244,246,0.8) 0%, rgba(255,255,255,0.8) 50%, rgba(243,244,246,0.8) 100%);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.dark .glass-marquee-container {
+    background: linear-gradient(90deg, rgba(15,23,42,0.8) 0%, rgba(30,41,59,0.8) 50%, rgba(15,23,42,0.8) 100%);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
