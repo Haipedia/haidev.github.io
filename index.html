@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HaiDev Agency | Software Development & Cybersecurity Expert</title>
+    <meta name="description" content="HaiDev Agency provides high-end Java development, AI/ML integration, and Ethical Hacking services. Led by Haipedia, based in ABU Zaria.">
+    <meta name="keywords" content="HaiDev, HaiDev Agency, Haipedia, Software Development Zaria, Java Developer Nigeria, Cybersecurity, Ethical Hacking, AI ML Solutions">
+    <meta property="og:title" content="HaiDev Agency | Premier Digital Solutions">
+    <meta property="og:description" content="Building secure, intelligent software for the modern era.">
+    <meta property="og:url" content="https://haipedia.github.io/haidev.github.io/">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-gray-100 font-poppins overflow-x-hidden selection:bg-blue-500/30 transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 deep-glass transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-gray-900 dark:text-white">
+                Hai<span class="text-blue-600 dark:text-blue-500">Dev</span>.
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="index.html" class="text-blue-600 dark:text-blue-400 transition">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">Services</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">Portfolio</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">About</a>
+                <button id="theme-toggle" class="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition text-gray-600 dark:text-gray-400">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition shadow-lg shadow-blue-500/30">Hire Us</a>
+            </div>
+            <div class="md:hidden flex items-center gap-4">
+                <button id="mobile-theme-toggle" class="text-xl p-2 text-gray-600 dark:text-gray-400">
+                    <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-btn" class="text-2xl focus:outline-none text-gray-900 dark:text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 absolute top-full w-full left-0 flex flex-col px-6 py-4 space-y-4 shadow-xl">
+            <a href="index.html" class="font-medium text-blue-600 dark:text-blue-500">Home</a>
+            <a href="services.html" class="font-medium text-gray-600 dark:text-gray-400">Services</a>
+            <a href="portfolio.html" class="font-medium text-gray-600 dark:text-gray-400">Portfolio</a>
+            <a href="about.html" class="font-medium text-gray-600 dark:text-gray-400">About</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-4 min-h-[90vh] flex items-center relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="space-y-6 text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                <p class="text-blue-600 dark:text-blue-400 font-semibold tracking-widest text-sm uppercase">Welcome to HaiDev</p>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight text-gray-900 dark:text-white">
+                    Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Digital</span> <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">Solutions</span> That <br> Scale.
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg mx-auto md:mx-0 font-light">
+                    From dynamic Full-Stack web apps to robust WordPress e-commerce platforms and seamless mobile experiences. We build technology that drives business growth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-6">
+                    <a href="resume.pdf" download class="px-8 py-3 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-white/5 text-gray-700 dark:text-gray-200 font-medium transition flex items-center justify-center gap-2 deep-glass">
+                        Download CV <i class="fa-solid fa-download text-sm"></i>
+                    </a>
+                    <a href="portfolio.html" class="px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium transition flex items-center justify-center shadow-lg shadow-blue-500/30">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center" data-aos="zoom-in" data-aos-duration="1200">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 hero-avatar-ring deep-glass">
+                    <img src="hussaini.png" alt="Hussaini" class="w-full h-full object-cover rounded-full border border-gray-200 dark:border-white/10">
+                    
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 deep-glass px-6 py-2 rounded-full border border-gray-200 dark:border-white/20 whitespace-nowrap shadow-xl">
+                        <span class="text-gray-600 dark:text-gray-400 text-sm font-light">Founder: <span class="text-gray-900 dark:text-white font-semibold">Hussaini</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full glass-marquee-container py-5 overflow-hidden backdrop-blur-md">
+        <div class="marquee-content flex space-x-16 items-center whitespace-nowrap text-sm text-gray-600 dark:text-gray-300 font-medium tracking-widest uppercase">
+            <span><i class="fa-solid fa-code text-blue-600 dark:text-blue-400 mr-2"></i> Full-Stack Dev</span><span>|</span>
+            <span><i class="fa-solid fa-mobile-screen text-purple-600 dark:text-purple-400 mr-2"></i> Mobile Apps</span><span>|</span>
+            <span><i class="fa-brands fa-wordpress text-blue-600 dark:text-blue-400 mr-2"></i> WordPress</span><span>|</span>
+            <span><i class="fa-brands fa-java text-purple-600 dark:text-purple-400 mr-2"></i> Java Architecture</span><span>|</span>
+            <span><i class="fa-solid fa-pen-nib text-blue-600 dark:text-blue-400 mr-2"></i> UI/UX Design</span><span>|</span>
+            <span><i class="fa-solid fa-code text-blue-600 dark:text-blue-400 mr-2"></i> Full-Stack Dev</span><span>|</span>
+            <span><i class="fa-solid fa-mobile-screen text-purple-600 dark:text-purple-400 mr-2"></i> Mobile Apps</span><span>|</span>
+            <span><i class="fa-brands fa-wordpress text-blue-600 dark:text-blue-400 mr-2"></i> WordPress</span><span>|</span>
+            <span><i class="fa-brands fa-java text-purple-600 dark:text-purple-400 mr-2"></i> Java Architecture</span><span>|</span>
+            <span><i class="fa-solid fa-pen-nib text-blue-600 dark:text-blue-400 mr-2"></i> UI/UX Design</span>
+        </div>
+    </div>
+
+    <section class="py-24 px-4 relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Adapt or <span class="text-gray-400 dark:text-gray-500">Fall Behind.</span></h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 font-light leading-relaxed">
+                    A slow website or clunky mobile app isn't just an inconvenience—it's lost revenue. We provide the robust technical architecture to ensure you dominate your sector.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 grid grid-cols-2 gap-6" data-aos="fade-left">
+                <div class="deep-glass p-6 rounded-2xl text-center border-t-2 border-blue-500/30">
+                    <i class="fa-solid fa-stopwatch text-3xl text-blue-600 dark:text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-lg text-gray-900 dark:text-white">Sub-Second</h4>
+                    <span class="text-sm text-gray-500">Load Times</span>
+                </div>
+                <div class="deep-glass p-6 rounded-2xl text-center border-t-2 border-purple-500/30">
+                    <i class="fa-solid fa-shield-check text-3xl text-purple-600 dark:text-purple-400 mb-3"></i>
+                    <h4 class="font-bold text-lg text-gray-900 dark:text-white">Enterprise</h4>
+                    <span class="text-sm text-gray-500">Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Engineered for Excellence</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="md:col-span-8 deep-glass p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-bolt text-3xl text-blue-600 dark:text-blue-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Blazing Fast Performance</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-light leading-relaxed max-w-lg">We write clean, optimized code. Whether it's a React Full-Stack or a custom WordPress theme, load times are minimized to keep your users engaged and reduce bounce rates.</p>
+                </div>
+                <div class="md:col-span-4 deep-glass p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-shield-halved text-3xl text-purple-600 dark:text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Robust Security</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">Built with strict protocols to ensure your platforms are resilient.</p>
+                </div>
+                <div class="md:col-span-12 deep-glass p-10 rounded-3xl flex flex-col md:flex-row justify-between items-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="md:w-2/3">
+                        <i class="fa-solid fa-layer-group text-3xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Scalable Architecture</h3>
+                        <p class="text-gray-600 dark:text-gray-400 font-light text-sm md:text-base">Your business will grow, and your software should too. We design systems that easily scale.</p>
+                    </div>
+                    <div class="mt-6 md:mt-0">
+                        <a href="services.html" class="px-6 py-3 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-white/10 text-gray-900 dark:text-white transition text-sm font-medium">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Selected Work</h2>
+                <p class="text-gray-600 dark:text-gray-400 font-light">A showcase of Full-Stack, mobile, and WordPress solutions.</p>
+            </div>
+            
+            <div id="portfolio-container" class="grid md:grid-cols-3 gap-8 mb-12" data-aos="fade-up" data-aos-delay="200"></div>
+            
+            <div class="text-center">
+                <a href="portfolio.html" class="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition group font-medium">
+                    View All Case Studies <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-20 pb-10 border-t border-gray-200 dark:border-white/5 bg-white dark:bg-slate-950 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="index.html" class="text-3xl font-bold tracking-tighter mb-6 block text-gray-900 dark:text-white">
+                    Hai<span class="text-blue-600 dark:text-blue-500">Dev</span>.
+                </a>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    A premier digital agency engineering high-performance web applications, native mobile experiences, and scalable WordPress architectures.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Our Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Full-Stack Development</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Mobile App Development</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">WordPress Solutions</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Web Management</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Tech Insights</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 font-light">Subscribe to our newsletter for the latest in software architecture and design.</p>
+                <form action="https://formspree.io/f/xqedoelk" method="POST" class="flex flex-col gap-3">
+                  <input type="email" name="email" placeholder="Email address" required class="w-full px-4 py-3 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 focus:outline-none focus:border-blue-500 text-sm text-gray-900 dark:text-white">
+                  <button type="submit" class="w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition text-sm shadow-lg shadow-blue-500/30">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center pt-8 border-t border-gray-200 dark:border-white/5">
+            <p class="text-gray-500 dark:text-gray-600 text-sm">© 2026 HaiDev Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-2xl flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300 hover:bg-blue-700 hover:-translate-y-1 z-50">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, offset: 50 });</script>
+    <script src="script.js"></script>
+</body>
+</html>

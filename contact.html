@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HaiDev Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-gray-100 font-poppins overflow-x-hidden selection:bg-blue-500/30 transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 deep-glass transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-gray-900 dark:text-white">
+                Hai<span class="text-blue-600 dark:text-blue-500">Dev</span>.
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">Services</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">Portfolio</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 transition">About</a>
+                <button id="theme-toggle" class="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition text-gray-600 dark:text-gray-400">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition shadow-[0_0_15px_rgba(37,99,235,0.5)]">Hire Us</a>
+            </div>
+            <div class="md:hidden flex items-center gap-4">
+                <button id="mobile-theme-toggle" class="text-xl p-2 text-gray-600 dark:text-gray-400">
+                    <i id="mobile-theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menu-btn" class="text-2xl focus:outline-none text-gray-900 dark:text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+<div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 absolute top-full w-full left-0 flex flex-col px-6 py-4 space-y-4 shadow-xl">            <a href="index.html" class="font-medium text-gray-600 dark:text-gray-400">Home</a>
+            <a href="about.html" class="font-medium text-gray-600 dark:text-gray-400">About</a>
+            <a href="services.html" class="font-medium text-gray-600 dark:text-gray-400">Services</a>
+            <a href="portfolio.html" class="font-medium text-gray-600 dark:text-gray-400">Portfolio</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-12 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <p class="text-blue-600 dark:text-blue-400 font-semibold tracking-widest text-sm uppercase mb-3">Let's Talk</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
+                Start a <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Project.</span>
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto font-light">
+                Ready to upgrade your digital architecture? Fill out the form below with your project details, and we will get back to you within 24 hours to schedule a consultation.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 relative z-10 mb-20">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+            
+            <div class="w-full lg:w-1/3 space-y-8">
+                <div class="deep-glass p-8 rounded-3xl border-l-4 border-l-blue-500">
+                    <i class="fa-solid fa-envelope text-3xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Email Us</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-light text-sm mb-4">For general inquiries & project proposals.</p>
+                    <a href="mailto:haidev.agency@gmail.com" class="text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition">haidev.agency@gmail.com</a>
+                </div>
+
+                <div class="deep-glass p-8 rounded-3xl border-l-4 border-l-purple-500">
+                    <i class="fa-solid fa-location-dot text-3xl text-purple-600 dark:text-purple-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Location</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-light text-sm mb-4">Operating globally, based in Nigeria.</p>
+                    <p class="text-lg font-medium text-gray-900 dark:text-white">Saminaka, Kaduna State.</p>
+                </div>
+
+                <div class="deep-glass p-8 rounded-3xl border-l-4 border-l-green-500">
+                    <i class="fa-solid fa-clock text-3xl text-green-600 dark:text-green-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Working Hours</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Monday - Friday: 9AM - 6PM (WAT)</p>
+                    <p class="text-gray-600 dark:text-gray-400 font-light text-sm">Weekend: Emergency Support Only</p>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-2/3">
+                <div class="deep-glass p-8 md:p-12 rounded-[40px] relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+                    
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">Tell us about your project</h2>
+                    
+                    <form action="https://formspree.io/f/mkovagee" method="POST" class="space-y-6 relative z-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Full Name</label>
+                                <input type="text" name="Full Name" placeholder="John Doe" class="w-full px-5 py-4 rounded-xl bg-gray-100 dark:bg-slate-900/50 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition" required>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Email Address</label>
+                                <input type="email" name="Email Address" placeholder="john@company.com" class="w-full px-5 py-4 rounded-xl bg-gray-100 dark:bg-slate-900/50 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Service Required</label>
+                                <select name="Service Requested" class="w-full px-5 py-4 rounded-xl bg-gray-100 dark:bg-slate-900/50 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition appearance-none cursor-pointer" required>
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="Full-Stack Web App">Full-Stack Web App</option>
+                                    <option value="Native Mobile App">Native Mobile App</option>
+                                    <option value="WordPress / E-Commerce">WordPress / E-Commerce</option>
+                                    <option value="Web Management Retainer">Web Management Retainer</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Estimated Budget</label>
+                                <select name="Project Budget" class="w-full px-5 py-4 rounded-xl bg-gray-100 dark:bg-slate-900/50 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition appearance-none cursor-pointer" required>
+                                    <option value="" disabled selected>Select a budget...</option>
+                                    <option value="Under $1,000">Under $1,000</option>
+                                    <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                    <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                    <option value="$10,000+">$10,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Project Details</label>
+                            <textarea name="Message" rows="5" placeholder="Tell us about your goals, timelines, and technical requirements..." class="w-full px-5 py-4 rounded-xl bg-gray-100 dark:bg-slate-900/50 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition resize-none" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl transition shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-20 pb-10 border-t border-gray-200 dark:border-white/5 bg-white dark:bg-slate-950 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="index.html" class="text-3xl font-bold tracking-tighter mb-6 block text-gray-900 dark:text-white">
+                    Hai<span class="text-blue-600 dark:text-blue-500">Dev</span>.
+                </a>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    A premier digital agency engineering high-performance web applications, native mobile experiences, and scalable WordPress architectures.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/5 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition border border-gray-200 dark:border-white/10"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Our Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Full-Stack Development</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Mobile App Development</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">WordPress Solutions</a></li>
+                    <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition text-sm">Web Management</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-gray-900 dark:text-white">Tech Insights</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 font-light">Subscribe to our newsletter for the latest in software architecture and design.</p>
+                <form action="https://formspree.io/f/xqedoelk" method="POST" class="flex flex-col gap-3">
+                  <input type="email" name="email" placeholder="Email address" required class="w-full px-4 py-3 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 focus:outline-none focus:border-blue-500 text-sm text-gray-900 dark:text-white">
+                  <button type="submit" class="w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition text-sm shadow-lg shadow-blue-500/30">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center pt-8 border-t border-gray-200 dark:border-white/5">
+            <p class="text-gray-500 dark:text-gray-600 text-sm">© 2026 HaiDev Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-2xl flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300 hover:bg-blue-700 hover:-translate-y-1 z-50">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, offset: 50 });</script>
+    <script src="script.js"></script>
+</body>
+</html>
